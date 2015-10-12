@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f7035025-6aab-4d1c-8733-bba412b5362e}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>StockExchangeModeling</Name>
+    <RootNamespace>StockExchangeModeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="DashboardController_AddStockSymbol.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DashboardController_AddStockSymbol.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DashboardController_AddStockSymbol.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DashboardController_DeleteStockSymbol.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DashboardController_DeleteStockSymbol.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DashboardController_DeleteStockSymbol.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DashboardController_GridDataForStockPrices.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DashboardController_GridDataForStockPrices.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DashboardController_GridDataForStockPrices.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DashboardController_GridDataForSymbols.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DashboardController_GridDataForSymbols.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DashboardController_GridDataForSymbols.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="StockData_StockPrice.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StockData_StockPrice.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StockData_StockPrice.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="StockMarket.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StockMarket.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StockMarket.componentdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\StockExchangeModeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

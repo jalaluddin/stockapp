@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="9968d930-8d47-44d0-913a-8ffd2b5486a3" name="DashboardController_AddStockSymbol" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="7cd891c8-7c82-4d30-8ac2-4a3e488a7b18" name="DashboardController_AddStockSymbol" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="30c9609c-e332-4c60-83d1-999484cc3eae" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c9a15a3c-22fe-4b96-893f-07c76ebe9515" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="9e1f82e1-2ceb-4a27-9c28-2eaed76ad7d2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="c869c7f3-13df-4e8e-acff-6e21364ccd75" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6f3cb7ce-bae3-4cae-922b-c7f2d4ef615c" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="43cf80a8-4845-4c41-84cc-18707b148fc5" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="23f93b63-37f0-4d40-b831-973d04ef9a78" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="c82568f4-85fb-473e-988b-a4a41e3a2bc5" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c137586b-2b97-499e-9994-550886806ce0" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="9e1f82e1-2ceb-4a27-9c28-2eaed76ad7d2" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="079f8a3a-7484-46f2-ae90-903eeefe2b1d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="05161dfd-1066-4b6a-b204-710ee7b11842" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="c869c7f3-13df-4e8e-acff-6e21364ccd75" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="74093bdf-cc79-417d-9598-e92bdfb17dea" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" LastKnownName="this._stockSymbolService : IStockSymbolService" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="40e5f8e2-5b61-4088-8e3e-71a8bd277e70" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3d6b330b-edaf-4580-9b65-2602f81b350f" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="88aad129-9867-4766-b11c-93d2e3abe39c" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a22376be-cbce-423d-8073-123e169bcd71" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3d6b330b-edaf-4580-9b65-2602f81b350f" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2775a709-73ba-464a-bf0b-3298fdf4f3c4" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" LastKnownName="this._stockSymbolService : IStockSymbolService" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6f3cb7ce-bae3-4cae-922b-c7f2d4ef615c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="88aad129-9867-4766-b11c-93d2e3abe39c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" LastKnownName="this._stockSymbolService : IStockSymbolService" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="43cf80a8-4845-4c41-84cc-18707b148fc5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a22376be-cbce-423d-8073-123e169bcd71" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" LastKnownName="this._stockSymbolService : IStockSymbolService" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="40e5f8e2-5b61-4088-8e3e-71a8bd277e70" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="39a4dba4-6a3a-45c6-82e8-72ba9f21bba4" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" LastKnownName="this._stockSymbolService : IStockSymbolService" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment Id="f8b39634-d2c1-438a-9aab-7b61878e585d" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="690f2b63-345e-4692-9274-ad2a92e1f796" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="230f2957-1896-48ae-b8fa-1a7f7a1b4b8f" guardText="if (ModelState.IsValid &amp;&amp; _stockSymbolService.SaveStockSymbol(symbol))" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="23f93b63-37f0-4d40-b831-973d04ef9a78" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="c137586b-2b97-499e-9994-550886806ce0" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="23f93b63-37f0-4d40-b831-973d04ef9a78" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c82568f4-85fb-473e-988b-a4a41e3a2bc5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="3ccd0f41-314b-4411-97c8-b434b5b7f288" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="c137586b-2b97-499e-9994-550886806ce0" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c9a15a3c-22fe-4b96-893f-07c76ebe9515" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1682147e-e883-45a6-8ba3-7edd552f9e43" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" LastKnownName="this : DashboardController" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="a876b993-80ad-42f5-a6f0-08abdc4ab11a" name="this : DashboardController" isActor="false" lifelineDisplayName="this : DashboardController" referencedInstance="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController ObjectInstance=&quot;Object instance 2&quot;)" referencedType="StockMarketApp‎.Areas‎.MyAccount‎.Controllers‎.DashboardController">
+            <referencesInternal>
+              <reference Id="c57bf884-5f7b-469e-a42f-eede683a02fd" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=StockMarketApp.Areas.MyAccount.Controllers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController)&quot;)" tag="DGQL" />
+              <reference Id="cf056699-dce6-48e6-bf8f-3ca5d6aac6f8" handle="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="9e1f82e1-2ceb-4a27-9c28-2eaed76ad7d2" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="c9a15a3c-22fe-4b96-893f-07c76ebe9515" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="dd02e51d-ae66-43f5-8320-ecdc80f3df17" name="this._stockSymbolService : IStockSymbolService" isActor="false" lifelineDisplayName="this._stockSymbolService : IStockSymbolService" referencedInstance="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController Member=_stockSymbolService ObjectInstance=&quot;Object instance 5&quot;)" referencedType="StockMarketApp‎.Areas‎.MyAccount‎.Models‎.IStockSymbolService">
+            <referencesInternal>
+              <reference Id="41429f39-5b68-4001-86a2-e99b00aaebf0" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=StockMarketApp.Areas.MyAccount.Models)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=IStockSymbolService)&quot;)" tag="DGQL" />
+              <reference Id="5b71e729-2cec-4861-8f9b-3d5ed311628c" handle="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=IStockSymbolService)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="3d6b330b-edaf-4580-9b65-2602f81b350f" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="40e5f8e2-5b61-4088-8e3e-71a8bd277e70" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="78befcdd-3989-4ef6-83f7-93a484b92369" name="AddStockSymbol" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="5b055d27-a5ad-4b56-b9a9-03d14cf29bd2" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=StockMarketApp.Areas.MyAccount.Controllers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController Member=(Name=AddStockSymbol OverloadingParameters=[(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=StockSymbol)]))&quot;)" tag="DGQL" />
+              <reference Id="5a659a0a-7246-4134-9970-05483a09a4ea" handle="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Controllers Type=DashboardController Member=(Name=AddStockSymbol OverloadingParameters=[(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=StockSymbol)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="05161dfd-1066-4b6a-b204-710ee7b11842" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c869c7f3-13df-4e8e-acff-6e21364ccd75" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="3aaa8028-f947-472c-b775-fa5557fbaa98" name="SaveStockSymbol" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="_stockSymbolService.SaveStockSymbol(symbol)">
+            <referencesInternal>
+              <reference Id="af7818af-00bd-481f-a5db-54cf9216ebd6" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=StockMarketApp.Areas.MyAccount.Models)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=IStockSymbolService)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=IStockSymbolService Member=(Name=SaveStockSymbol OverloadingParameters=[(Assembly=&amp;quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&amp;quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=StockSymbol)]))&quot;)" tag="DGQL" />
+              <reference Id="bdd81245-c2d8-4d5d-92ae-f2e161247579" handle="(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=IStockSymbolService Member=(Name=SaveStockSymbol OverloadingParameters=[(Assembly=&quot;$(6a8e9607-a86f-42ab-8cc2-f5a4c0bcebee.OutputPathUri)&quot; Namespace=StockMarketApp.Areas.MyAccount.Models Type=StockSymbol)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6f3cb7ce-bae3-4cae-922b-c7f2d4ef615c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="88aad129-9867-4766-b11c-93d2e3abe39c" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="136bb028-9357-442d-ab01-04bbebcfcbf0" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a22376be-cbce-423d-8073-123e169bcd71" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="43cf80a8-4845-4c41-84cc-18707b148fc5" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="4fea5229-2d48-4ba1-a8d8-9104e4cf4a8c" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="return RedirectToAction(&quot;StockSymbols&quot;)">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c82568f4-85fb-473e-988b-a4a41e3a2bc5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="3ccd0f41-314b-4411-97c8-b434b5b7f288" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="079f8a3a-7484-46f2-ae90-903eeefe2b1d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1682147e-e883-45a6-8ba3-7edd552f9e43" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="2775a709-73ba-464a-bf0b-3298fdf4f3c4" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="39a4dba4-6a3a-45c6-82e8-72ba9f21bba4" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>

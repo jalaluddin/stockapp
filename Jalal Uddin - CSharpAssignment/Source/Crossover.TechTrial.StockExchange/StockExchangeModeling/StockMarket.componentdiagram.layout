@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="StockMarket">
+  <componentModelMoniker Id="8691cc26-4ada-4e1d-a7da-cc15cc0953a5" />
+  <nestedChildShapes>
+    <componentShape Id="4760a288-c75e-40fb-b25b-faa7634ef720" absoluteBounds="5, 1.25, 2.3645833333333339, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="2.3645833333333339" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="2.3645833333333339" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="1" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="1" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="e522bd8c-bd1e-4c9e-b4b2-16ce150b84a4" LastKnownName="Stock Market API Server" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="fd2d3eae-5bb2-4e48-be18-9afbd18b84d3" absoluteBounds="6.6875, 2.2, 0.15625, 0.40625" blackBoxLocation="1.6875" whiteBoxLocation="1.6875" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true" whiteBoxEdge="b" blackBoxEdge="b" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="6377dbc2-8cf0-4832-81f6-22c72937b7ec" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="c826297b-e753-41a5-ad16-35c004986cde" absoluteBounds="5, 3.75, 2.416666666666667, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="2.416666666666667" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="2.416666666666667" whiteBoxTopEdgeShapesCount="1" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="1" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="648d3068-161c-44eb-bb23-c8bb99a4a514" LastKnownName="Stock Market Web App Server" />
+      <relativeChildShapes>
+        <requiredInterfaceShape Id="dac36539-c206-4022-96c7-e4d6a03c4f2a" absoluteBounds="6.6875, 3.34375, 0.15625, 0.40625" blackBoxLocation="1.6875" whiteBoxLocation="1.6875" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true" whiteBoxEdge="t" blackBoxEdge="t" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="0a19bf66-460e-4418-a760-438d70bec570" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <dependencyConnector edgePoints="[(6.765625 : 3.34375); (6.765625 : 2.60625)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="7be71c38-6c63-4073-9a5f-c6bc91f9f018" />
+      <relativeChildShapes />
+      <nodes>
+        <requiredInterfaceShapeMoniker Id="dac36539-c206-4022-96c7-e4d6a03c4f2a" />
+        <providedInterfaceShapeMoniker Id="fd2d3eae-5bb2-4e48-be18-9afbd18b84d3" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>

@@ -1,0 +1,75 @@
+
+
+
+=============================================
+ERROR 2015-10-11 18:19:06,960 40355ms
+---------------------------------------------
+StockPriceViewModelSaveStockSymbol                
+---------------------------------------------
+WriteLog           - In Site: localhost -- IP: ::1 -- User: jalal.exe2@gmail.com -- 
+Failed to add stock symbol
+=============================================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at StockMarketApp.Areas.MyAccount.Models.StockPriceViewModel.GetPricesJson(DataTablesAjaxRequestModel dataTablesModel) in f:\Projects\Jalal Uddin - CSharpAssignment\Source\Crossover.TechTrial.StockExchange\StockMarketApp\Areas\MyAccount\Models\StockPriceViewModel.cs:line 60
+
+
+
+=============================================
+ERROR 2015-10-11 18:19:09,027 42422ms
+---------------------------------------------
+StockPriceViewModelSaveStockSymbol                
+---------------------------------------------
+WriteLog           - In Site: localhost -- IP: ::1 -- User: jalal.exe2@gmail.com -- 
+Failed to add stock symbol
+=============================================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at StockMarketApp.Areas.MyAccount.Models.StockPriceViewModel.GetPricesJson(DataTablesAjaxRequestModel dataTablesModel) in f:\Projects\Jalal Uddin - CSharpAssignment\Source\Crossover.TechTrial.StockExchange\StockMarketApp\Areas\MyAccount\Models\StockPriceViewModel.cs:line 60
+
+
+
+=============================================
+ERROR 2015-10-11 18:27:19,134 112250ms
+---------------------------------------------
+StockPriceViewModelSaveStockSymbol                
+---------------------------------------------
+WriteLog           - In Site: localhost -- IP: ::1 -- User: jalal.exe2@gmail.com -- 
+Failed to add stock symbol
+=============================================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at StockMarketApp.Areas.MyAccount.Models.StockPriceViewModel.GetPricesJson(DataTablesAjaxRequestModel dataTablesModel) in f:\Projects\Jalal Uddin - CSharpAssignment\Source\Crossover.TechTrial.StockExchange\StockMarketApp\Areas\MyAccount\Models\StockPriceViewModel.cs:line 60
+
+
+
+=============================================
+ERROR 2015-10-11 18:27:30,608 123724ms
+---------------------------------------------
+StockPriceViewModelSaveStockSymbol                
+---------------------------------------------
+WriteLog           - In Site: localhost -- IP: ::1 -- User: jalal.exe2@gmail.com -- 
+Failed to add stock symbol
+=============================================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at StockMarketApp.Areas.MyAccount.Models.StockPriceViewModel.GetPricesJson(DataTablesAjaxRequestModel dataTablesModel) in f:\Projects\Jalal Uddin - CSharpAssignment\Source\Crossover.TechTrial.StockExchange\StockMarketApp\Areas\MyAccount\Models\StockPriceViewModel.cs:line 60
+
+
+
+=============================================
+ERROR 2015-10-11 18:27:37,396 130512ms
+---------------------------------------------
+StockPriceViewModelSaveStockSymbol                
+---------------------------------------------
+WriteLog           - In Site: localhost -- IP: ::1 -- User: jalal.exe2@gmail.com -- 
+Failed to add stock symbol
+=============================================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at StockMarketApp.Areas.MyAccount.Models.StockPriceViewModel.GetPricesJson(DataTablesAjaxRequestModel dataTablesModel) in f:\Projects\Jalal Uddin - CSharpAssignment\Source\Crossover.TechTrial.StockExchange\StockMarketApp\Areas\MyAccount\Models\StockPriceViewModel.cs:line 60

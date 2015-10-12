@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8691cc26-4ada-4e1d-a7da-cc15cc0953a5" name="StockMarket" linkedPackageId="65708835-2c1b-4a59-9151-bfc74db8a104" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3bd673cb-4cc3-4047-8b30-964be1479d59">
+      <profileInstance Id="05d5ae64-1e4c-401b-9ed7-3ee1865f4b37" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d94c4fc7-33dc-4aac-b7fa-b67ed0c42655">
+      <profileInstance Id="8e4773d6-8038-4938-a1de-37679910dbaa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="e522bd8c-bd1e-4c9e-b4b2-16ce150b84a4" name="Stock Market API Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf170192-ba97-4642-8886-4eb7b8fcf2eb" />
+        <ownedAttributesInternal>
+          <providedInterface Id="6377dbc2-8cf0-4832-81f6-22c72937b7ec" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="56c5fe69-9da3-4fa2-8730-04d5069e2388" />
+            <type_NamedElement>
+              <interfaceMoniker Id="972f2bb0-7d6e-483e-b8b5-e2126601248a" LastKnownName="Stock Price Service" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="648d3068-161c-44eb-bb23-c8bb99a4a514" name="Stock Market Web App Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2511a0dd-3564-429d-a3c3-c6c1a120c966" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="0a19bf66-460e-4418-a760-438d70bec570" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2724d0a7-39fd-4532-9477-d406999fadd3" />
+            <suppliersInternal>
+              <dependency Id="7be71c38-6c63-4073-9a5f-c6bc91f9f018">
+                <providedInterfaceMoniker Id="6377dbc2-8cf0-4832-81f6-22c72937b7ec" LastKnownName="Port1" />
+                <elementDefinition Id="b04486f2-e02c-4a4e-92a8-292c3faade3b" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="b1ae281d-7ecd-4ba4-a070-ac3ee9c925bb" LastKnownName="Ask For Stock Price" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="b1ae281d-7ecd-4ba4-a070-ac3ee9c925bb" name="Ask For Stock Price" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0f155dd-4bf9-43a6-a695-6a32f66bfb2b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="972f2bb0-7d6e-483e-b8b5-e2126601248a" name="Stock Price Service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b936b42-6f07-40c0-9aaf-0f1d09c71739" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="65708835-2c1b-4a59-9151-bfc74db8a104" name="StockExchangeModeling">
+    <elementDefinition Id="d3b5e28c-85ff-48dd-9852-ffc791034e4e" />
+  </package>
+</componentModel>

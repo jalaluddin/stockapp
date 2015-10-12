@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @RenderSection("head", false)
+    <title>@ViewBag.Title - Stock Market Expert</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Stock Market Expert", "StockPrices", "Dashboard", new { area = "MyAccount" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Stock Prices", "StockPrices", "Dashboard", new { area = "MyAccount" })</li>
+                    <li>@Html.ActionLink("Stock Symbols", "StockSymbols", "Dashboard", new { area = "MyAccount" })</li>
+                    <li>@Html.ActionLink("API", "APIInfo", "Dashboard", new { area = "MyAccount" })</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Stock Market Expert</p>
+        </footer>
+    </div>
+    <!-- Modal popup for delete confirmation -->
+    <div id="deleteModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="deleteModalLabel">Are you sure you want to delete this?</h3>
+                </div>
+                <div class="modal-body">
+                    If you confirm, all related data may be lost and can't be reverted.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn cancel" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <a class="btn btn-danger confirm" href="#">Yes. Proceed!</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- ./Modal popup for delete confirmation -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
